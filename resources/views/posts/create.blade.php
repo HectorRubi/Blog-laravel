@@ -18,7 +18,6 @@
                         action="{{ route('posts.store') }}" 
                         method="POST"
                         enctype="multipart/form-data"
-                        class="form"
                     >
                         <div class="form-group">
                             <label>Titulo *</label>
