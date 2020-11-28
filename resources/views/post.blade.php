@@ -15,6 +15,13 @@
             <p class="card-text">
                 {{ $post->body }}
             </p>
+            @if($post->image)
+                @if($post->iframe)
+                    <div class="embed-responsive embed-responsive-16by9">
+                        {!! $post->iframe !!}
+                    </div>
+                @endif
+            @endif
             <p class="text-muted mb-0">
                 <em>
                     &ndash; {{ $post->user->name }}
